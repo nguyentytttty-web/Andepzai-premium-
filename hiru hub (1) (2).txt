@@ -4144,7 +4144,7 @@ spawn(function()
                         game.StarterGui:SetCore("SendNotification", {
                             Title = "Notification",
                             Text = "Not Have Enough Material",
-                            Icon = "http://www.roblox.com/asset/?id=",
+                            Icon = "http://www.roblox.com/asset/?id=83788148584544",
                             Duration = 2.5
                         })
                     else
@@ -7395,7 +7395,7 @@ task.spawn(function()
                             game.StarterGui:SetCore("SendNotification", {
                                 Title = "Teddy Hub",
                                 Text = "Use! - Yama or Tushita",
-                                con = "rbxassetid://11995210995",
+                                con = "rbxassetid://83788148584544",
                                 Duration = 10,
                             })
                             hasNotified = true
@@ -7438,7 +7438,7 @@ spawn(function()
                         local clickDetector = sealedKatana.SealedKatana.Handle:FindFirstChild("ClickDetector")
                         if clickDetector then
                             repeat
-                                task.wait(0.5)
+                                task.wait(0.1)
                                 fireclickdetector(clickDetector)
                             until player.Backpack:FindFirstChild("Yama") or not getgenv().AutoYama
                         end
@@ -7453,7 +7453,7 @@ Toggle:OnChanged(function(Value)
     getgenv().AutoTushita = Value
 end)
 spawn(function()
-    while task.wait(0.5) do
+    while task.wait(0.1) do
         if getgenv().AutoTushita and World3 then
             pcall(function()
                 local enemies = game:GetService("Workspace").Enemies
